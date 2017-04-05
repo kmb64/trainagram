@@ -1,9 +1,12 @@
 import React, {Component} from 'react';
 import './App.css';
 import {PrimaryNav} from './components/PrimaryNav';
+import {Log} from './components/Log';
+import {Note} from './components/Note';
 
 class App extends Component {
   render() {
+    const date = new Date("2017-04-05").toDateString();
     return (
       <div className="App">
         <PrimaryNav/>
@@ -184,7 +187,7 @@ class App extends Component {
                   <td>Large strong latte</td>
                 </tr>
                 <tr>
-                  <th scope="row">130pm</th>
+                  <th scope="row">1230pm</th>
                   <td>Spicy Korean fried chicken on a stir fry salad</td>
                 </tr>
                 <tr>
@@ -206,6 +209,84 @@ class App extends Component {
                 </tbody>
               </table>
             </div>
+            <Log date={date}>
+              <div className="session">
+                <a href="https://www.crossfitinvictus.com/wod/march-28-2017-competition/">March 28, 2017 –
+                  Competition</a>
+                <div className="embed-responsive embed-responsive-16by9">
+                  <video className="embed-responsive-item" controls>
+                    <source src="https://scontent-lax3-2.cdninstagram.com/t50.2886-16/17745509_1856841737863596_3338324121783107584_n.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                  </video>
+                </div>
+                <Note>Mobility exercise I want to try.</Note>
+                <p>A.<br />
+                  Build to a 3-RM Dumbbell Z-Press</p>
+                <Note>Built to 22.5kg</Note>
+                <p>followed by…</p>
+                <p>For time:<br />
+                  30 Dumbbell Z-Presses @ 85% of today’s 3-RM</p>
+                <Note>2:44 @ 17.5kg</Note>
+                <p>B.<br />
+                  Four sets of:<br />
+                  Front-Racked Barbell Bulgarian Split Squats x 4-6 reps @ 30X1<br />
+                  Rest 45 seconds after each leg<br />
+                  Weighted Chest-to-Bar Pull-Ups x 4-6 reps @ 21X0<br />
+                  Rest 90 seconds</p>
+                <Note>Did 5 lunges @ 50kg and 4 C2B at 10kg</Note>
+                <p>C.<br />
+                  Three sets of:<br />
+                  Landmine Rows x 6 reps each @ 2111<br />
+                  Rest as needed<br />
+                  100-Foot Suitcase Carry (Left)<br />
+                  100-Foot Suitcase Carry (Right)<br />
+                  Rest as needed</p>
+                <Note>Used T bar with 15kg probably try 20kg next time. 24kg KB for the suitcase carry, probably try 32 or 28 next time.</Note>
+                <p>D.<br />
+                  Every 2 minutes, for 20 minutes (10 sets):<br />
+                  Row 300/250 Meters</p>
+                <p>Pick a pace that you believe you can keep within 2 seconds of for all ten sets.</p>
+                <Note>Lowest was 1:00, highest was 1:03</Note>
+              </div>
+              <table className="table">
+                <thead>
+                <tr>
+                  <th></th>
+                  <th>Food</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th scope="row">730am</th>
+                  <td>Blueberry / spinach smoothie and ham, cheese tomato crossiant</td>
+                </tr>
+                <tr>
+                  <th scope="row">8am</th>
+                  <td>Large strong latte</td>
+                </tr>
+                <tr>
+                  <th scope="row">12pm</th>
+                  <td>200g Tuna spinach salad</td>
+                </tr>
+                <tr>
+                  <th scope="row">4pm</th>
+                  <td>6 inch chicken fillet subway</td>
+                </tr>
+                <tr>
+                  <th scope="row">515pm</th>
+                  <td>Peanut choc bar and snickers bar</td>
+                </tr>
+                <tr>
+                  <th scope="row">8pm</th>
+                  <td>Bowl of lamb mince vegetable stirfy with 3 poached eggs</td>
+                </tr>
+                <tr>
+                  <th scope="row">9pm</th>
+                  <td>1 cup of strawberry sorbet</td>
+                </tr>
+                </tbody>
+              </table>
+            </Log>
           </div>
         </main>
       </div>
