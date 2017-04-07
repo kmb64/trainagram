@@ -6,7 +6,8 @@ import {Note} from './components/Note';
 
 class App extends Component {
   render() {
-    const date = new Date("2017-04-05").toDateString();
+    const date4March = new Date("2017-04-05").toDateString();
+    const date5March = new Date("2017-04-06").toDateString();
     return (
       <div className="App">
         <PrimaryNav/>
@@ -209,7 +210,7 @@ class App extends Component {
                 </tbody>
               </table>
             </div>
-            <Log date={date}>
+            <Log date={date4March}>
               <div className="session">
                 <a href="https://www.crossfitinvictus.com/wod/march-28-2017-competition/">March 28, 2017 –
                   Competition</a>
@@ -279,6 +280,54 @@ class App extends Component {
                 <tr>
                   <th scope="row">8pm</th>
                   <td>Bowl of lamb mince vegetable stirfy with 3 poached eggs</td>
+                </tr>
+                <tr>
+                  <th scope="row">9pm</th>
+                  <td>1 cup of strawberry sorbet</td>
+                </tr>
+                </tbody>
+              </table>
+            </Log>
+            <Log date={date5March}>
+              <div className="session">
+                <h3>Active rest day</h3>
+                <p>Spent a good 45 minutes rolling out and stretching. Then spent 15 minutes attempting tripple unders and then finished off with a 10 minute row averaging 1:52 pace</p>
+              </div>
+              <table className="table">
+                <thead>
+                <tr>
+                  <th></th>
+                  <th>Food</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <th scope="row">8am</th>
+                  <td>2 pieces peanut butter toast and large strong bagel</td>
+                </tr>
+                <tr>
+                  <th scope="row">930</th>
+                  <td>Salmon and cream cheese bagel</td>
+                </tr>
+                <tr>
+                  <th scope="row">10am</th>
+                  <td>Large strong latte</td>
+                </tr>
+                <tr>
+                  <th scope="row">1230pm</th>
+                  <td><a href="http://sezar.com.au/wp-content/uploads/2016/04/LUNCH-AT-SEZAR-.pdf">Work lunch at Sezar.</a> 2 glasses of reisling wine</td>
+                </tr>
+                <tr>
+                  <th scope="row">515pm</th>
+                  <td>Half peanut choc bar</td>
+                </tr>
+                <tr>
+                  <th scope="row">7pm</th>
+                  <td>3 beers</td>
+                </tr>
+                <tr>
+                  <th scope="row">8pm</th>
+                  <td>500g Roasted chicken and spinach based salad and mayo</td>
                 </tr>
                 <tr>
                   <th scope="row">9pm</th>
